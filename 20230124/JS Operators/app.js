@@ -1,0 +1,25 @@
+let a = 10;
+let b = 20;
+b=a+10;
+a++;
+console.log(a);
+console.log(a++);
+console.log(a);
+console.log(++a);
+a+=10;
+console.log(a);
+a-=10;
+console.log(a);
+a *=10;
+console.log(a);
+a %=10;
+console.log(a);
+a /=10;
+console.log(a);
+
+let c =0;
+let d=0;
+let e=(c+=20)-(d++);
+console.log(c);
+console.log(d);
+console.log(e);
