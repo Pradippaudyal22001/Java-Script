@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Challenge</h1>
+        </div>
+
+        <div class="container-body">
+            <div class="questions">
+                <div class="question_title">
+                    <h2>Questions Sheet</h2>
+                </div>
+
+                <div class="question_body">
+                    <div class="content">
+                        <div class="input-group">
+                            <label for="">Num One</label>
+                            <input type="number" placeholder="Type Number" oninput="numone()" id="numoneentervalue">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Num Two</label>
+                            <input type="number" placeholder="Type Number" oninput="numtwo()" id="numtwoentervalue">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Num Three</label>
+                            <input type="number" placeholder="Type Number" oninput="numthree()" id="numthreeentervalue">
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button onclick="calculatemax()">Calc-Max</button>
+                        <button onclick="calculatemin()">Calc-Min</button>
+                        <button onclick="calculateodd()">Find-Odd-Number</button>
+                        <button onclick="calculateeven()">Find-Even-Number</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="answers">
+                <h2>Answers Sheet</h2>
+                <table>
+                    <tr>
+                        <th>Num One</th>
+                        <td>
+                            <input type="text" placeholder="Show Num One" disabled id="numone-id" onclick="numone()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Num Two</th>
+                        <td>
+                            <input type="text" placeholder="Show Num Two" disabled id="numtwo-id" onclick="numtwo()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Num Three</th>
+                        <td>
+                            <input type="text" placeholder="Show Num Three" disabled id="numthree-id"
+                                onclick="numthree()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Max Number</th>
+                        <td>
+                            <input type="text" placeholder="Max Number" disabled id="maxnumber">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Min Number</th>
+                        <td>
+                            <input type="text" placeholder="Min Number" disabled id="minnumber">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Odd Number</th>
+                        <td>
+                            <input type="text" placeholder="Display Odd Number/s" disabled id="oddnumber">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Even Number</th>
+                        <td>
+                            <input type="text" placeholder="Display Even Number/s" disabled id="evennumber">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Remove Last & Add Last</title>
+</head>
+
+<body>
+    <h1>Remove Last & Add Last</h1>
+
+    <div class="container">
+        <div class="input-group">
+            <input type="text" placeholder="Enter text" disabled id="entertext">
+        </div>
+
+        <div class="actions">
+            <div class="actions_number">
+                <button onclick="calculatevalue(1)">1</button>
+                <button onclick="calculatevalue(2)">2</button>
+                <button onclick="calculatevalue(3)">3</button>
+                <button onclick="calculatevalue(4)">4</button>
+                <button onclick="calculatevalue(5)">5</button>
+                <button onclick="calculatevalue(6)">6</button>
+                <button onclick="calculatevalue(7)">7</button>
+                <button onclick="calculatevalue(8)">8</button>
+                <button onclick="calculatevalue(9)">9</button>
+                <button onclick="calculatevalue(0)">0</button>
+            </div>
+            <div class="actions_alphabet">
+                <button onclick="calculatevalue('a')">a</button>
+                <button onclick="calculatevalue('b')">b</button>
+                <button onclick="calculatevalue('c')">c</button>
+                <button onclick="calculatevalue('d')">d</button>
+                <button onclick="calculatevalue('e')">e</button>
+                <button onclick="calculatevalue('f')">f</button>
+                <button onclick="calculatevalue('g')">g</button>
+                <button onclick="calculatevalue('h')">h</button>
+                <button onclick="calculatevalue('i')">i</button>
+                <button onclick="calculatevalue('j')">j</button>
+            </div>
+            <div class="actions_alphabet">
+                <button onclick="calculatevalue('kl')">k</button>
+                <button onclick="calculatevalue('l')">l</button>
+                <button onclick="calculatevalue('m')">m</button>
+                <button onclick="calculatevalue('n')">n</button>
+                <button onclick="calculatevalue('o')">o</button>
+                <button onclick="calculatevalue('p')">p</button>
+                <button onclick="calculatevalue('q')">q</button>
+                <button onclick="calculatevalue('r')">r</button>
+                <button onclick="calculatevalue('s')">s</button>
+                <button onclick="calculatevalue('t')">t</button>
+            </div>
+            <div class="actions_alphabet">
+                <button onclick="calculatevalue('u')">u</button>
+                <button onclick="calculatevalue('v')">v</button>
+                <button onclick="calculatevalue('w')">w</button>
+                <button onclick="calculatevalue('x')">x</button>
+                <button onclick="calculatevalue('y')">y</button>
+                <button onclick="calculatevalue('z')">z</button>
+                <button onclick="calculatevalue(' ')">Space</button>
+                <button onclick="deletevalue()">Delete</button>
+            </div>
+            <div class="actions_alphabet">
+                <button onclick="clearvalue()">Clear</button>
+            </div>
+            <div class="actions_alphabet">
+                <input type="checkbox" name="" id="shiftid">Shift
+            </div>
+        </div>
+    </div>
+
+
+    <div class="information">
+        <ol>
+            <li>Clicked numbers/characters/Space were displayed in input [Enter text]</li>
+            <li>Firt Click [character : a] that appends at [Enter text] and showing [a]</li>
+            <li>And then Click [character : p] that appends behind [a] and becomes [ap]</li>
+            <li>When click [Delete], remove last character of input[ap] becomes [a]</li>
+            <li>When click [Clear], remove all characters from input.</li>
+        </ol>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

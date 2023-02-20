@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Math | Find Max/Min</title>
+</head>
+<body>
+    
+    <div>
+        <div>
+            <label for="">Num One</label>
+            <input value="0" type="number" name="" disabled id="RandomNumber1">
+        </div>
+        <div>
+            <label for="">Num Two</label>
+            <input value="0" type="number" name="" disabled id="RandomNumber2">
+        </div>
+        <div>
+            <label for="">Num Three</label>
+            <input value="0" type="number" name="" disabled id="RandomNumber3">
+        </div>
+        <div>
+            <input type="button" value="Generate 3 Random Numbers" onclick="Generate3RandomNumbers()">
+        </div>
+        <div>
+            <input type="button" value="Show Max Number" onclick="ShowMax()">
+            <span id="maxnum">---</span>
+        </div>
+        <div>
+            <input type="button" value="Show Min Number"onclick= ShowMin()>
+            <span id="minnum">---</span>
+        </div>
+        <div>
+            <input type="button" value="Show same Number"onclick= Showsame()>
+            <span id="samenum" itemid="samenum">---</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
